@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+        <title>Color Changing</title>
+    </head>
+    <style>
+        .name{
+            font-family: 'Fascinate', cursive;    
+        }
+        .lower-portion{
+            font-family: 'Jost', sans-serif;
+        }
+        .click-btn{
+            font-family: 'Jost', sans-serif;
+        }
+        
+    </style>
+
+    <body>
+    <div class="main-body relative h-screen bg-[#F3F3F3]">
+        <div class="heading py-3 px-20 flex justify-between items-center bg-white shadow-md">
+            <p> <span class="name text-[40px] text-center text-purple-800 tracking-[4px]">Color</span> <br> <span class="lower-portion tracking-[1px]">Changing Game</span></p>
+            <p class="project-name p-2 rounded-[5px] text-[20px] tracking-[2px] "> Fun Project</p>
+        </div>
+        <div class="absolute top-[50%] -translate-y-1/2 left-[50%] -translate-x-1/2">
+        <div class="">
+                <p class="text-2xl px-8 py-3 bg-black text-white rounded-[4px]">Backgroud Color : <span class="colorValue">  </span></p> <br>
+                <div class="buttons flex gap-x-3 justify-center">
+                    <button class="click-btn w-[130px] py-2 bg-indigo-500 text-white lrounded-[5px] tracking-[2px] opacity-75 hover:opacity-100 duration-300 rounded-[4px] hover:shadow"> Click Me </button>
+                    <button class="reset-btn w-[130px] bg-indigo-500 text-white lrounded-[5px] tracking-[2px] opacity-75 hover:opacity-100 duration-300 rounded-[4px] hover:shadow">Reset</button>
+                </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
